@@ -1,0 +1,231 @@
+/* ==========================================
+   RESET Y CONFIGURACIÓN BÁSICA
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+/* ==========================================
+   MAIN CONTAINER
+   ========================================== */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 800px rgba(0,0,0,0.9);
+}
+
+/* ==========================================
+   HEADER PRINCIPAL
+
+    Se le esta dando un color de fondo degradado empezando de         celeste a terminar a morado.
+     background: linear-gradient(135deg, #9E5FDE 0%, #18D5F0          100%);
+
+      texto color blanco, y centrado.
+   ========================================== */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+/* ==========================================
+   H1 dentro del header: tamaño 2 veces al normal del navegador 16px.
+tambien usa una sombra difuminada-dere,izqu, difuminado-
+   ========================================== */
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 4px rgba(0,0,0,0.9);
+}
+header h1:hover{
+  color: blue;
+  font-size: 3rem;
+  text-shadow: 10px 10px 4px rgba(0,0,0,0.9);
+}
+
+/* ==========================================
+   Barra de navegacion, color, sticky para que se mueva al hacer scroll, top 0 para que sepa donde empezar a bajar.
+
+elimina los marcas y luego display: flex para que se afilen horizontalmente
+   ========================================== */
+nav {
+    background: #2c3e50;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;/*CENTRADO*/
+    flex-wrap: wrap;/*RESPONSIVIDAD*/
+}
+
+nav li {
+    margin: 0;/*ELIMINA ESPACIOS PREESTABLECIDOS*/
+}
+
+nav a {
+    display: block; /*Hace mas grande el are del clic*/
+    color: white;
+    text-decoration: none;/*Elimina la linea de los enlaces*/
+    padding: 1rem 1.5rem;
+    transition: background 0.5s;
+}
+
+nav a:hover {
+    background: #667eea;
+}
+
+/* ==========================================
+   SECTION Y ARTICLE
+   ========================================== */
+section {
+    padding: 2rem;
+    background: #f8f9fa;
+}
+
+article {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+article header {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+article h2 {
+    color: #667eea;
+    font-size: 2rem;
+    border-bottom: 3px solid #667eea;/*Borde inferior, la linea*/
+    padding-bottom: 0.5rem;
+}
+
+article h3 {
+    color: #764ba2;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.8;/*Separacion entre lineas*/
+}
+
+/* ==========================================
+   ASIDE
+   ========================================== */
+aside {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-top: 4px solid #667eea;
+}
+
+aside h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================
+   FIGURE E IMAGEN
+   ========================================== */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%; /*Responsividad*/
+    height: auto; /*Mantiene la proporción de la imagen (la relación entre ancho y alto).*/
+    border-radius: 16px;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.9);
+    transition: transform 0.3s;
+}
+figure img:hover{
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.9);
+    transform: scale(1.02);
+}
+figcaption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+mark {
+    background: #667eea;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ==========================================
+   RESPONSIVE - MÓVILES
+   ========================================== */
+@media (max-width: 768px) {
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav a {
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    article {
+        padding: 1rem;
+    }
+    
+    article h2 {
+        font-size: 1.5rem;
+    }
+    
+    article h3 {
+        font-size: 1.2rem;
+    }
+    
+}
