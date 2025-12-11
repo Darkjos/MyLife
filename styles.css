@@ -61,6 +61,8 @@ header img{
     width: 20%;
     border-radius: 16px;
     box-shadow: 5px 5px 25px rgba(0,0,0,0.9);
+    max-width: 100%; /*Responsividad*/
+    height: auto; /*Mantiene la proporción de la imagen (la relación entre ancho y alto).*/
 }
 
 /* ==========================================
