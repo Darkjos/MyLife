@@ -181,18 +181,27 @@ figure img {
     width: 50%;
 }
 
-.container-skills{
+
+/*Contenedor e imagenes de proyectos*/
+.container-proyects{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* ← espacio entre imágenes */
 }
-.Img-skills{
-    max-width: 100%; /*Responsividad*/
-    height: auto; /*Mantiene la proporción de la imagen (la relación entre ancho y alto).*/
+
+.img-proyects{
+    max-width: 100%;
+    height: auto;
     border-radius: 16px;
     box-shadow: 5px 5px 25px rgba(0,0,0,0.9);
     transition: transform 0.3s;
-    width: 25%;
+    width: calc(50% - 20px); /* ajusta el ancho */
 }
+
+
+
+
+
 
 figure img:hover{
     box-shadow: 15px 15px 25px rgba(0,0,0,0.9);
