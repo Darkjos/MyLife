@@ -2,9 +2,9 @@
 Pagina que muestra la historia de mi vida.
 
 mi-proyecto/
-├── index.html  (el código que te di)
-├── styles.css  (cuando agregues CSS)
-├── script.js   (cuando agregues JavaScript)
+├── index.html  
+├── styles.css  
+├── script.js  
 └── images/
     ├── josue-profile.jpg
     ├── childhood.jpg
