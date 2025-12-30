@@ -213,6 +213,31 @@ mark {
     padding: 0.3rem 0.6rem;
     border-radius: 4px;
 }
+/* ==========================================
+   CONTACT
+   ========================================== */
+
+.contact{
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    background: white;
+    margin: 15px 0;
+}
+.contact-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+.contact-item a:hover {
+   text-decoration: underline;
+}
+
 
 /* ==========================================
    FOOTER
